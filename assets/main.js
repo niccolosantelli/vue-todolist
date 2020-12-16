@@ -10,10 +10,10 @@ let root = new Vue({
        this.contenitore.push(this.frase)
      },
      rimuovi(index){
-       this.$delete(this.contenitore, index)
+       this.contenitore.splice(index, 1)
      },
-     rimuovi(index){
-       this.$delete(this.frasiPreImpostate, index)
+     cancella(index){
+       this.frasiPreImpostate.splice(index, 1)
      },
    },
 

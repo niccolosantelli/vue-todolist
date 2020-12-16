@@ -44,3 +44,13 @@ list-style: none;
 .fas{
   margin-left: 100px
 }
+
+.box{
+  width: 210px;
+  height: 60px
+}
+.box2{
+  width: 210px;
+  height: 10px;
+
+}

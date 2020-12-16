@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mt{
+  margin-top: 10px
+}
+.mb{
+  margin-bottom: 10px
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: lightgray;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+
+}
+.logo{
+  display: block;
+  margin-bottom: 10px
+}
+
+h4{
+  text-align: center;
+}
+
+ul{
+list-style: none;
+}
+
+.fas{
+  margin-left: 100px
+}

@@ -15,7 +15,7 @@
   <div id="root" class="">
     <img class="logo" src="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=height:60/https://www.filepicker.io/api/file/PrjQ7ZxTQye3aR2Tzt3N" alt="">
     <div class="box">
-    <input type="text" name="frase" value="" v-model="frase">
+    <input type="text" name="frase" value="" v-model="frase" v-on:keyup.enter="invioMessaggio">
     <button type="button" name="button" @click="invioMessaggio">ADD</button>
     <h4 class="mt mb">TO DO LIST</h4>
     </div>
@@ -23,15 +23,11 @@
       <ul>
         <li class="flex sb stile" v-for= "preimpostate, index in frasiPreImpostate">
           <p>{{preimpostate}}</p>
-            <i class="fas fa-times" @click="cancella(index)"></i>
-          </li>
-          <li v-if="!frasiPreImpostate.length">Lista vuota!</li>
-          <li v-for="preimpostate in frasiPreImpostate"></li>
-
-
-
+          <i class="fas fa-times" @click="cancella(index)"></i>
+        </li>
+        <li v-if="!frasiPreImpostate.length">Lista vuota!</li>
+        <li v-for="preimpostate in frasiPreImpostate"></li>
       </ul>
-
     </div>
   </div>
 

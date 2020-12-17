@@ -25,11 +25,13 @@
           <p>{{preimpostate}}</p>
             <i class="fas fa-times" @click="cancella(index)"></i>
           </li>
-        <li class="flex sb stile" v-for="paroleUtente, index in contenitore" >
-          <p>{{ paroleUtente }}</p>
-          <i class="fas fa-times" @click="rimuovi(index)"></i>
-        </li>
+          <li v-if="!frasiPreImpostate.length">Lista vuota!</li>
+          <li v-for="preimpostate in frasiPreImpostate"></li>
+
+
+
       </ul>
+
     </div>
   </div>
 
